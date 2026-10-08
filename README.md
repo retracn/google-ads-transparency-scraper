@@ -10,6 +10,7 @@ Google Ads Transparency Scraper is an Apify Actor that returns every ad an adver
 
 - One row per ad: advertiser, ad ID, format, first and last shown, days running, headline and texts, images, landing page, YouTube video, preview and link.
 - Look up advertisers by name, domain or ID; filter by 50+ countries and format.
+- Competitor ad alerts: with Only new ads on, a scheduled run checks each advertiser's latest ads and returns only new ones. Guide: https://retracn.github.io/automationnation-actors/guides/competitor-ad-alerts/
 - Price: $1 per 1,000 ads with ad text included.
 
 ## Example input
@@ -106,6 +107,9 @@ A public Google tool listing the ads verified advertisers run on Search, YouTube
 
 **Can I see ad spend?**
 No: Google publishes spend and targeting only for political ads.
+
+**Can I get alerts when a competitor launches new ads?**
+Yes. Turn on Only new ads and schedule it daily: each run returns only ads earlier runs didn't, with text, dates and previews.
 
 ## More from AutomationNation
 
